@@ -1,0 +1,21 @@
+{
+  "name": "week1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy:edge": "wrangler deploy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "itty-router": "^5.0.22",
+    "joi": "^18.0.1"
+  },
+  "devDependencies": {
+    "wrangler": "^4.46.0"
+  }
+}

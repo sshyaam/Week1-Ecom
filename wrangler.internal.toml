@@ -1,0 +1,42 @@
+# wrangler.internal.toml
+name = "week1-internal-placeholder"
+main = "auth_worker.js"   # this will be overridden by CLI
+compatibility_date = "2025-11-08"
+
+[vars]
+DATA_ENCRYPTION_KEY = "aW50b21pbmV3aWRlbHliZWhpbmRkYW5nZXJzZWxlY3Q="
+PASSWORD_PEPPER    = "week1project"
+ALLOW_SELLER_SELF_REGISTER = "1"
+
+[[services]]
+binding = "REALTIME_SERVICE"
+service = "week1-realtime"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "week1-db"
+database_id = "54ecae67-b555-4e2a-994b-190b4192e062"
+
+[[kv_namespaces]]
+binding = "PRODUCT_CACHE"
+id = "133a702616a6442fb491fdc94efca31d"
+
+[[kv_namespaces]]
+binding = "LOG_CONFIG"
+id = "19d5a76c6c974d668089cc55e30bd420"
+
+[[r2_buckets]]
+binding = "LOG_BUCKET"
+bucket_name = "week1-logs"
+
+[[r2_buckets]]
+binding = "LOGGING_SERVICE"
+bucket_name = "week1-logs"
+
+[[r2_buckets]]
+binding = "AVATAR_BUCKET"
+bucket_name = "week1-avatar"
+
+[[r2_buckets]]
+binding = "PRODUCT_IMAGE_BUCKET"
+bucket_name = "week1-product"
