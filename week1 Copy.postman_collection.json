@@ -1,0 +1,995 @@
+{
+	"info": {
+		"_postman_id": "3db78f0c-5941-44d8-ac44-1134ad450f68",
+		"name": "week1 Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49617310",
+		"_collection_link": "https://oslab6099-2503494.postman.co/workspace/Oslab's-Workspace~e28c4472-681e-46a5-8c9e-8916c21d1888/collection/49617310-3db78f0c-5941-44d8-ac44-1134ad450f68?action=share&source=collection_link&creator=49617310"
+	},
+	"item": [
+		{
+			"name": "Home endpoint",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://week1-edge.shyaamdps.workers.dev/",
+					"protocol": "https",
+					"host": [
+						"week1-edge",
+						"shyaamdps",
+						"workers",
+						"dev"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Health Endpoint",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://week1-edge.shyaamdps.workers.dev/health",
+					"protocol": "https",
+					"host": [
+						"week1-edge",
+						"shyaamdps",
+						"workers",
+						"dev"
+					],
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Admin\",\r\n    \"email\": \"admin@company.com\",\r\n    \"password\": \"Password123!\",\r\n    \"role\": \"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://week1-edge.shyaamdps.workers.dev/api/users/register",
+					"protocol": "https",
+					"host": [
+						"week1-edge",
+						"shyaamdps",
+						"workers",
+						"dev"
+					],
+					"path": [
+						"api",
+						"users",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"raj@company.com\",\r\n    \"password\": \"Password123!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://week1-edge.shyaamdps.workers.dev/api/auth/login",
+					"protocol": "https",
+					"host": [
+						"week1-edge",
+						"shyaamdps",
+						"workers",
+						"dev"
+					],
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "View Users Cookie",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://week1-edge.shyaamdps.workers.dev/api/me",
+					"protocol": "https",
+					"host": [
+						"week1-edge",
+						"shyaamdps",
+						"workers",
+						"dev"
+					],
+					"path": [
+						"api",
+						"me"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Logout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://week1-edge.shyaamdps.workers.dev/api/auth/logout",
+					"protocol": "https",
+					"host": [
+						"week1-edge",
+						"shyaamdps",
+						"workers",
+						"dev"
+					],
+					"path": [
+						"api",
+						"auth",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Forgot Password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"harvey@company.com\",\r\n    \"new_password\": \"Password123!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://week1-edge.shyaamdps.workers.dev/api/auth/forgot-password",
+					"protocol": "https",
+					"host": [
+						"week1-edge",
+						"shyaamdps",
+						"workers",
+						"dev"
+					],
+					"path": [
+						"api",
+						"auth",
+						"forgot-password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "View User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://week1-edge.shyaamdps.workers.dev/api/users/me/profile",
+					"protocol": "https",
+					"host": [
+						"week1-edge",
+						"shyaamdps",
+						"workers",
+						"dev"
+					],
+					"path": [
+						"api",
+						"users",
+						"me",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"role\": \"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://week1-edge.shyaamdps.workers.dev/api/users/me",
+					"protocol": "https",
+					"host": [
+						"week1-edge",
+						"shyaamdps",
+						"workers",
+						"dev"
+					],
+					"path": [
+						"api",
+						"users",
+						"me"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://week1-edge.shyaamdps.workers.dev/api/users/me",
+					"protocol": "https",
+					"host": [
+						"week1-edge",
+						"shyaamdps",
+						"workers",
+						"dev"
+					],
+					"path": [
+						"api",
+						"users",
+						"me"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "View all products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://week1-edge.shyaamdps.workers.dev/api/products",
+					"protocol": "https",
+					"host": [
+						"week1-edge",
+						"shyaamdps",
+						"workers",
+						"dev"
+					],
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "View a product that exists",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://week1-edge.shyaamdps.workers.dev/api/products/fa7f626b-3b05-4708-92a0-38edb030f900",
+					"protocol": "https",
+					"host": [
+						"week1-edge",
+						"shyaamdps",
+						"workers",
+						"dev"
+					],
+					"path": [
+						"api",
+						"products",
+						"fa7f626b-3b05-4708-92a0-38edb030f900"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "View a product that does not exist",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://week1-edge.shyaamdps.workers.dev/api/products/prod-2",
+					"protocol": "https",
+					"host": [
+						"week1-edge",
+						"shyaamdps",
+						"workers",
+						"dev"
+					],
+					"path": [
+						"api",
+						"products",
+						"prod-2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "View Cart",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://week1-edge.shyaamdps.workers.dev/api/cart",
+					"protocol": "https",
+					"host": [
+						"week1-edge",
+						"shyaamdps",
+						"workers",
+						"dev"
+					],
+					"path": [
+						"api",
+						"cart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add items to cart that exist",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"product_id\": \"59941eef-b2bc-474c-b5e3-12478a7f6a80\",\r\n  \"qty\": 20,\r\n  \"operation\": \"add\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://week1-edge.shyaamdps.workers.dev/api/cart/items",
+					"protocol": "https",
+					"host": [
+						"week1-edge",
+						"shyaamdps",
+						"workers",
+						"dev"
+					],
+					"path": [
+						"api",
+						"cart",
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Set items quantity in cart",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"product_id\": \"59941eef-b2bc-474c-b5e3-12478a7f6a80\",\r\n  \"qty\": 2,\r\n  \"operation\": \"set\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://week1-edge.shyaamdps.workers.dev/api/cart/items",
+					"protocol": "https",
+					"host": [
+						"week1-edge",
+						"shyaamdps",
+						"workers",
+						"dev"
+					],
+					"path": [
+						"api",
+						"cart",
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remove items from cart",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"product_id\": \"prod-1\",\r\n  \"qty\": 2,\r\n  \"operation\": \"remove\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://week1-edge.shyaamdps.workers.dev/api/cart/items",
+					"protocol": "https",
+					"host": [
+						"week1-edge",
+						"shyaamdps",
+						"workers",
+						"dev"
+					],
+					"path": [
+						"api",
+						"cart",
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Checkout summary",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://week1-edge.shyaamdps.workers.dev/api/checkout/summary",
+					"protocol": "https",
+					"host": [
+						"week1-edge",
+						"shyaamdps",
+						"workers",
+						"dev"
+					],
+					"path": [
+						"api",
+						"checkout",
+						"summary"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Place order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"shipping_method_id\": \"express-IN\",\r\n  \"shipping_address_id\": \"a96325f5-e04b-4220-ac2f-e485e3bd5008\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://week1-edge.shyaamdps.workers.dev/api/checkout/place-order",
+					"protocol": "https",
+					"host": [
+						"week1-edge",
+						"shyaamdps",
+						"workers",
+						"dev"
+					],
+					"path": [
+						"api",
+						"checkout",
+						"place-order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create an Address",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Home\",\r\n  \"line1\": \"Tambaram\",\r\n  \"line2\": \"West Tambaram\",\r\n  \"city\": \"Chennai\",\r\n  \"state\": \"Tamil Nadu\",\r\n  \"postal\": \"600055\",\r\n  \"country\": \"IN\",\r\n  \"is_default_shipping\": true,\r\n  \"is_default_billing\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://week1-edge.shyaamdps.workers.dev/api/addresses",
+					"protocol": "https",
+					"host": [
+						"week1-edge",
+						"shyaamdps",
+						"workers",
+						"dev"
+					],
+					"path": [
+						"api",
+						"addresses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "View all Addresses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://week1-edge.shyaamdps.workers.dev/api/addresses",
+					"protocol": "https",
+					"host": [
+						"week1-edge",
+						"shyaamdps",
+						"workers",
+						"dev"
+					],
+					"path": [
+						"api",
+						"addresses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update an address",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": \"8eb92e9e-2fa8-452f-ad64-680958524c3d\",\r\n  \"postal\": \"600045\",\r\n  \"country\": \"IN\",\r\n  \"is_default_shipping\": true,\r\n  \"is_default_billing\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://week1-edge.shyaamdps.workers.dev/api/addresses",
+					"protocol": "https",
+					"host": [
+						"week1-edge",
+						"shyaamdps",
+						"workers",
+						"dev"
+					],
+					"path": [
+						"api",
+						"addresses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete address",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"a96325f5-e04b-4220-ac2f-e485e3bd5008\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://week1-edge.shyaamdps.workers.dev/api/addresses/",
+					"protocol": "https",
+					"host": [
+						"week1-edge",
+						"shyaamdps",
+						"workers",
+						"dev"
+					],
+					"path": [
+						"api",
+						"addresses",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "View Orders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://week1-edge.shyaamdps.workers.dev/api/orders",
+					"protocol": "https",
+					"host": [
+						"week1-edge",
+						"shyaamdps",
+						"workers",
+						"dev"
+					],
+					"path": [
+						"api",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "View Order Details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://week1-edge.shyaamdps.workers.dev/api/orders/991cb876-2329-4118-bf4d-e8c0ab850a25",
+					"protocol": "https",
+					"host": [
+						"week1-edge",
+						"shyaamdps",
+						"workers",
+						"dev"
+					],
+					"path": [
+						"api",
+						"orders",
+						"991cb876-2329-4118-bf4d-e8c0ab850a25"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Seller Orders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://week1-edge.shyaamdps.workers.dev/api/seller/orders",
+					"protocol": "https",
+					"host": [
+						"week1-edge",
+						"shyaamdps",
+						"workers",
+						"dev"
+					],
+					"path": [
+						"api",
+						"seller",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Seller Orders",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"order_id\": \"\",\r\n    \"status\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://week1-edge.shyaamdps.workers.dev/api/seller/orders/status",
+					"protocol": "https",
+					"host": [
+						"week1-edge",
+						"shyaamdps",
+						"workers",
+						"dev"
+					],
+					"path": [
+						"api",
+						"seller",
+						"orders",
+						"status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Adidas Mens Originals Shoes\",\r\n  \"description\": \"Adidas Originals\",\r\n  \"price_cents\": 130,\r\n  \"currency\": \"USD\",\r\n  \"stock\": 15\r\n}"
+				},
+				"url": {
+					"raw": "https://week1-edge.shyaamdps.workers.dev/api/seller/products",
+					"protocol": "https",
+					"host": [
+						"week1-edge",
+						"shyaamdps",
+						"workers",
+						"dev"
+					],
+					"path": [
+						"api",
+						"seller",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update a product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": \"fa7f626b-3b05-4708-92a0-38edb030f900\",\r\n  \"price_cents\": 160\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://week1-edge.shyaamdps.workers.dev/api/seller/products/",
+					"protocol": "https",
+					"host": [
+						"week1-edge",
+						"shyaamdps",
+						"workers",
+						"dev"
+					],
+					"path": [
+						"api",
+						"seller",
+						"products",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update product Stock",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"product_id\": \"fa7f626b-3b05-4708-92a0-38edb030f900\",\r\n  \"qty\": 2,\r\n  \"operation\": \"add\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://week1-edge.shyaamdps.workers.dev/api/seller/products/stock",
+					"protocol": "https",
+					"host": [
+						"week1-edge",
+						"shyaamdps",
+						"workers",
+						"dev"
+					],
+					"path": [
+						"api",
+						"seller",
+						"products",
+						"stock"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"product_id\": \"YOUR_PRODUCT_UUID\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://week1-edge.shyaamdps.workers.dev/api/seller/products",
+					"protocol": "https",
+					"host": [
+						"week1-edge",
+						"shyaamdps",
+						"workers",
+						"dev"
+					],
+					"path": [
+						"api",
+						"seller",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Debug DB",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://week1-edge.shyaamdps.workers.dev/debug/db",
+					"protocol": "https",
+					"host": [
+						"week1-edge",
+						"shyaamdps",
+						"workers",
+						"dev"
+					],
+					"path": [
+						"debug",
+						"db"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Logger config",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mode\": \"per_log\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://week1-edge.shyaamdps.workers.dev/api/admin/logging-config",
+					"protocol": "https",
+					"host": [
+						"week1-edge",
+						"shyaamdps",
+						"workers",
+						"dev"
+					],
+					"path": [
+						"api",
+						"admin",
+						"logging-config"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "View Logger Config",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://week1-edge.shyaamdps.workers.dev/api/admin/logging-config",
+					"protocol": "https",
+					"host": [
+						"week1-edge",
+						"shyaamdps",
+						"workers",
+						"dev"
+					],
+					"path": [
+						"api",
+						"admin",
+						"logging-config"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Logs",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"level\": \"info\",\r\n    \"event\": \"order_placed\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://week1-edge.shyaamdps.workers.dev/api/log",
+					"protocol": "https",
+					"host": [
+						"week1-edge",
+						"shyaamdps",
+						"workers",
+						"dev"
+					],
+					"path": [
+						"api",
+						"log"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send a websocket message",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\": \"53da9448-a2c1-420a-95e2-bba90758649b\",\r\n    \"type\": \"order_status\",\r\n    \"order_id\": \"991cb876-2329-4118-bf4d-e8c0ab850a25\",\r\n    \"status\": \"completed\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://week1-edge.shyaamdps.workers.dev/internal/order-status",
+					"protocol": "https",
+					"host": [
+						"week1-edge",
+						"shyaamdps",
+						"workers",
+						"dev"
+					],
+					"path": [
+						"internal",
+						"order-status"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
